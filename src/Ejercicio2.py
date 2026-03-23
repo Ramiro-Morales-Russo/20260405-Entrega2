@@ -42,14 +42,14 @@ def duracion_total(duraciones):
     segundos_totales = sum(duraciones)
     tiempo = transformar_segundos(segundos_totales)
     if len(tiempo) == 3:
-        return print(f'{tiempo[0]}hs {tiempo[1]}m {tiempo[2]}s')
+        return f'{tiempo[0]}hs {tiempo[1]}m {tiempo[2]}s'
     elif len(tiempo)==2:
-        return print(f'{tiempo[0]}m {tiempo[1]}s')
+        return f'{tiempo[0]}m {tiempo[1]}s'
     else:
-        return print(f'{tiempo[0]}s')
+        return f'{tiempo[0]}s'
 
 def max_duracion_posicion(duraciones_valor):
-    indice = 0
+    indice = 0  
     max_valor = 0
     max_posicion = -1
     for elemento in duraciones_valor:
