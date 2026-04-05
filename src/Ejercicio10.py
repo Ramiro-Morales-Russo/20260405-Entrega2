@@ -53,6 +53,8 @@ def actualizar_posiciones(tabla_posiciones, datos_por_ronda, numero_ronda, ganad
 
 
 def imprimir_posiciones(tabla_posiciones):
+    """Esta función imprime la tabla de posiciones ordenada por puntajes
+    de forma descendente"""
     tabla_ordenada = sorted(tabla_posiciones.items(),key=lambda x:x[1]['puntaje'],reverse=True)
     print('TABLA DE POSICIONES:')
     print(f'{'Cocinero':<15}{'Puntaje':<10}{'Rondas Ganadas':<15}{'Mejor Ronda':<10}{'Promedio':<15}')
