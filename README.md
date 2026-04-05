@@ -9,9 +9,11 @@ Lo primeroque debemos hacer es definir un entorno virtual en un directorio donde
 Para esto:
 
 1- Abrir la terminal y ubicarse en la carpeta donde se alojará el proyecto
+
 2- Crear el entorno virtual usando el comando:
     python -m venv mi_entorno
 (Si no funciona este comando usar python3 en lugar de python)
+
 3- Activar el entorno:
     mi_entorno\Scripts\activate
 
