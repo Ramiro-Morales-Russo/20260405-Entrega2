@@ -1,4 +1,6 @@
 def calcular_puntaje(notas):
+    """Esta función toma el diccionario correspondiente a las notas otogadas al participante
+    por los tres jueces en la ronda, las suma y devuelve el total"""
     total = 0
     for nota in notas.values():
         total += nota
@@ -6,6 +8,8 @@ def calcular_puntaje(notas):
 
 
 def determinar_ganador(datos_por_ronda):
+    """Esta función toma los datos de la ronda y determina quien fue el ganador
+    basandose en quien obtuvo mayor puntaje"""
     ganador = max(datos_por_ronda,key=lambda x:x['puntaje']) 
     return ganador
 
@@ -15,6 +19,8 @@ def imprimir_ganador(ganador):
 
 
 def simular_ronda(i, ronda, datos_por_ronda):
+    """Esta función hace a modo de procesamiento de la ronda, devuelve una lista 
+    con los resultados que obtuvo cada participante en la ronda"""
     print(f'Ronda {i} - {ronda['theme']}: ')
     for participante, notas in ronda['scores'].items():
         puntaje = calcular_puntaje(notas)
@@ -26,6 +32,7 @@ def simular_ronda(i, ronda, datos_por_ronda):
 
 
 def actualizar_posiciones(tabla_posiciones, datos_por_ronda, numero_ronda, ganador):
+    """Esta función toma los datos de la ronda y actualiza la tabla de posiciones"""
     for elemento in datos_por_ronda:
         cocinero = elemento["cocinero"]
         puntaje_actual = elemento["puntaje"]
