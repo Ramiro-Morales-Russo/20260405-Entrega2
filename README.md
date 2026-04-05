@@ -11,10 +11,13 @@ Para esto:
 1- Abrir la terminal y ubicarse en la carpeta donde se alojará el proyecto
 
 2- Crear el entorno virtual usando el comando:
+
     python -m venv mi_entorno
+
 (Si no funciona este comando usar python3 en lugar de python)
 
 3- Activar el entorno:
+
     mi_entorno\Scripts\activate
 
 
@@ -23,7 +26,8 @@ Para que esta entrega pueda ejecutarse correctamente se deben instalar las libre
 Para esto:
 Posicionarse en la carpeta donde se dispone del archivo requirements.txt y ejecutar en la terminal:
 
-pip install -r requirements.txt
+
+    pip install -r requirements.txt
 
 
 Como ejecutar el programa:
